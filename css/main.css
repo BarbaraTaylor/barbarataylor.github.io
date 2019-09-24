@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: 20 px/1 sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 30 rem;
+    width: 90%;
+}
+
