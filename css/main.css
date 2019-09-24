@@ -5,12 +5,49 @@
 }
 
 html {
-    font: 20 px/1 sans-serif;
+    font: 18px/1 sans-serif;
 }
 
 .wrapper {
     margin: 0 auto;
-    max-width: 30 rem;
+    max-width: 30rem;
     width: 90%;
 }
 
+body { /* These can get MUCH more complex btw */
+    background-image: linear-gradient(rgba(200, 200, 253, 0.75), rgb(201, 172, 189));
+}
+/* section {
+    background-image: radial-gradient(circle at center, red, blue);
+} */
+
+/* img {
+    width: 100%;
+}  */
+
+ul {
+    list-style: none;
+}
+
+ol {
+    list-style: none;
+}
+
+.main-header {
+    background-color: aliceblue;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.main-header__title {
+    color: maroon;
+}
+
+.about-me {
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.about-me {
+    color: maroon;
+}
