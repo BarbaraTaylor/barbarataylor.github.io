@@ -1,29 +1,18 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 html {
-    font: 18px/1 sans-serif;
+    font: 18px/1 "Be Vietnam", sans-serif;
+    --dark: #011627;
+    --light: #FDFFFC;
+    --mid: #C6EEEB;
+    --bright-red: #E71D36;
+    --bright-yellow: #FF9F1C;
+    --bright-blue: #2191FB;
 }
 
 .wrapper {
     margin: 0 auto;
-    max-width: 30rem;
+    max-width: 50rem;
     width: 90%;
 }
-
-body { /* These can get MUCH more complex btw */
-    background-image: linear-gradient(rgba(200, 200, 253, 0.75), rgb(201, 172, 189));
-}
-/* section {
-    background-image: radial-gradient(circle at center, red, blue);
-} */
-
-/* img {
-    width: 100%;
-}  */
 
 ul {
     list-style: none;
@@ -33,14 +22,42 @@ ol {
     list-style: none;
 }
 
-.main-header {
-    background-color: aliceblue;
-    padding: 1rem 2rem;
-    text-align: center;
+.header {
+    background-color: var(--bright-blue);
+    display: flex;
+    /* padding: 1rem 2rem; */
+    justify-content: space-between;
+    align-items: center;
 }
 
-.main-header__title {
-    color: maroon;
+.header__title {
+    color: var(--light);
+    margin: 0;
+    padding: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-list {
+    display: flex;
+    color: var(--light);
+    flex-direction: column;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+.nav-list a {
+    color: var(--light);
+}
+
+.nav-list__item {
+    margin-bottom: 0.75rem;
+}
+
+.nav-list__item:last-child {
+    margin-bottom: 0;
 }
 
 .about-me {
@@ -48,6 +65,85 @@ ol {
     text-align: center;
 }
 
-.about-me {
-    color: maroon;
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.about__about-item-1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+}
+
+.about__about-item-1__item-1 {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+.about__about-item-1__item-2 {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+.about__about-item-1__item-3 {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.about__about-item-2 {
+    align-items: flex-start;
+    margin-top: 0;
+    padding: 0;
+}
+
+.photo-youngself {
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.photo-corevalues {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+h2 {
+    color: var(--bright-red);
+}
+
+.projects {
+    display: flex;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__list-item {
+    color: var(--dark);
+}
+
+.footer {
+    display: flex;
+    justify-content:  center;
+}
+
+.figcaption {
+    opacity: 0;
+
+}
+
+.figure:hover figcaption {
+    opacity: 1;
 }
